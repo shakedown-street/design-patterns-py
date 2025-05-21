@@ -72,7 +72,7 @@ class MediaPlayer:
             self.video_renderer.render(file)
         else:
             raise ValueError("Unsupported file type")
-        
+
         print("Playing:", file.path)
 
     def pause(self):
@@ -87,7 +87,6 @@ class MediaPlayer:
             self.current_file = None
         else:
             print("Nothing to stop")
-
 
 
 audio_file = AudioFile("~/music/song.mp3")
